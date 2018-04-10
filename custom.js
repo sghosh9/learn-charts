@@ -1,4 +1,8 @@
 FusionCharts.ready(function() {
+    var myevent = (function() {
+        document.getElementById('message').innerHTML = "The chart has been rendered";
+    });
+
     var revenueChart = new FusionCharts({
         "type": "column2d",
         "renderAt": "chartContainer",
@@ -62,8 +66,15 @@ FusionCharts.ready(function() {
                     "value": "730000"
                 }
             ]
+        },
+        "events": {
+            "beforeInitialize": function() {
+                document.getElementById('message').innerHTML = "The chart is starting initialization";
+            }
         }
     });
 
     revenueChart.render();
+
+    revenueChart.addEventListener('renderComplete', myevent);
 })
