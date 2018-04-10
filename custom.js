@@ -1,6 +1,6 @@
 FusionCharts.ready(function() {
   var revenueChart = new FusionCharts({
-    "type": "column2d",
+    "type": "column3d",
     "renderAt": "chartContainer",
     "width": "500",
     "height": "300",
@@ -11,41 +11,39 @@ FusionCharts.ready(function() {
         "subCaption": "Harry's SuperMart",
         "xAxisName": "Month",
         "yAxisName": "Revenues (In USD)",
-        "numberPrefix": "$",
-        "paletteColors": "#cecece",
-        "bgColor": "#ffffff",
-        "borderAlpha": "100",
-        "canvasBorderAlpha": "0",
-        "usePlotGradientColor": "0",
-        "plotBorderAlpha": "10",
-        "placevaluesInside": "0",
-        "rotatevalues": "1",
-        "valueFontColor": "#000",
-        "showXAxisLine": "1",
-        "showYAxisLine": "1",
-        "xAxisLineColor": "#b48484",
-        "yAxisLineColor": "#b48484",
-        "divlineColor": "#59cece",
-        "divLineDashed": "1",
-        "showAlternateHGridColor": "0",
+        "animationDuration": "0.5",
+        // "paletteColors": "#0075c2, #cecece",
+        "labelDisplay": "rotate",
+        "slantLabels": 1,
+        "valueFontColor": "#ffffff",
+        "baseFont": "Helvetica Neue,Arial",
+        "captionFontSize": "14",
+        "subcaptionFontSize": "14",
         "subcaptionFontBold": "0",
-        "subcaptionFontSize": "14"
+        "placeValuesInside": 1,
+        "rotateValues": 1,
+        "showShadow": "0",
+        "divlineColor": "#999999",
+        "divLineDashed": "1",
+        "divlineThickness": "1",
+        "divLineDashLen": "1",
+        "canvasBgColor": "#ffffff"
       },
       "data": [
         {
-            "label": "Jan",
+            "label": "January",
             "value": "420000"
         },
         {
-            "label": "Feb",
+            "label": "February",
             "value": "810000"
         },
         {
-            "label": "Mar",
+            "label": "March",
             "value": "720000"
         },
         {
-            "label": "Apr",
+            "label": "April",
             "value": "550000"
         },
         {
@@ -53,31 +51,31 @@ FusionCharts.ready(function() {
             "value": "910000"
         },
         {
-            "label": "Jun",
+            "label": "June",
             "value": "510000"
         },
         {
-            "label": "Jul",
+            "label": "July",
             "value": "680000"
         },
         {
-            "label": "Aug",
+            "label": "August",
             "value": "620000"
         },
         {
-            "label": "Sep",
+            "label": "September",
             "value": "610000"
         },
         {
-            "label": "Oct",
+            "label": "Octber",
             "value": "490000"
         },
         {
-            "label": "Nov",
+            "label": "November",
             "value": "900000"
         },
         {
-            "label": "Dec",
+            "label": "December",
             "value": "730000"
         }
       ]
