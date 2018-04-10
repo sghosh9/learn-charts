@@ -1,7 +1,9 @@
 FusionCharts.ready(function() {
     var myevent = (function() {
-        document.getElementById('message').innerHTML = "The chart has been rendered";
+        console.log("The chart has been initialized");
+        document.getElementById('message').innerHTML = "The chart has been initialized";
     });
+    FusionCharts.addEventListener('beforeInitialize', myevent);
 
     var revenueChart = new FusionCharts({
         "type": "column2d",
@@ -69,12 +71,11 @@ FusionCharts.ready(function() {
         },
         "events": {
             "beforeInitialize": function() {
+                console.log("The chart is starting initialization");
                 document.getElementById('message').innerHTML = "The chart is starting initialization";
             }
         }
     });
 
     revenueChart.render();
-
-    revenueChart.addEventListener('renderComplete', myevent);
 })
